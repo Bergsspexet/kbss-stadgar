@@ -1,0 +1,134 @@
+\documentclass[a4paper,12pt]{article}
+
+% Språkpaket för svenska
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+
+\setlength{\parindent}{0pt}
+
+\newcommand{\paragrafnummer}[2]{%
+	\par\noindent
+	\llap{\textbf{#1}\quad}% nummer i marginalen
+	#2\par}
+% Automatisk numrering av paragrafer
+\newcounter{huvudparagraf}
+\newcounter{underparagraf}[huvudparagraf]
+
+% Makro för huvudparagraf: "1 §" i marginalen med alignering
+\newcommand{\huvudparagraf}[1]{%
+	\refstepcounter{huvudparagraf}%
+	\par\noindent
+	\hspace{0.5em}%
+	\llap{\textbf{\makebox[1.5em][r]{\arabic{huvudparagraf}}~\S\makebox[1em][l]{}}\quad}%
+	\hspace{-0.5em}#1\par
+}
+
+% Makro för underparagraf: "1.1" i marginalen med alignad punkt
+\newcommand{\underparagraf}[1]{%
+	\refstepcounter{underparagraf}%
+	\par\noindent
+	\llap{\textbf{\makebox[1.5em][r]{\arabic{huvudparagraf}}.\makebox[1em][l]{\arabic{underparagraf}}}\quad}%
+	#1\par
+}
+
+\begin{document}
+
+
+
+\begin{center}
+\Large Stadgar för Konglig Bergs Spectacle Sellskap
+\end{center}
+
+\vspace{1em}
+\huvudparagraf{Sellskapets namn och ändamål}
+\underparagraf{Sellskapets namn är Konglig Bergs Spectacle Sellskap (KBSS).}
+\underparagraf{KBSS är en kårförening vid Kungliga Tekniska Högskolan (KTH), och således underställd Tekniska Högskolans Studentkår (THS).}
+\underparagraf{Sellskapet har sitt säte i Stockholm.}
+\underparagraf{Sellskapets ändamål är att vara lite tokiga för rolighets skull.}
+\underparagraf{Sellskapet skall under varje verksamhetsår verka för att producera ett spectacle.}
+\vspace{1.5em}
+
+\huvudparagraf{Sellskapets verksamhetsår}
+\underparagraf{Sellskapets verksamhetsår är från 1/7 till 30/6.}
+\vspace{1.5em}
+
+\huvudparagraf{Sellskapets beslutande och verkställande organ är:}
+\underparagraf{Årsmötet}
+\underparagraf{Lilla rådet (styrelsen)}
+\underparagraf{Chefer}
+\underparagraf{Stora rådet}
+\underparagraf{Revisorer}
+\vspace{1.5em}
+
+\huvudparagraf{Medlemskap}
+\underparagraf{Medlemskap beviljas av lilla rådet.}
+\underparagraf{Rätt till medlemskap har den som har för avsikt att aktivt och på ett rationellt sätt medverka för att producera årets spectacle och är medlem i THS.}
+\underparagraf{Person som ej är medlem i THS kan beviljas medlemskap i KBSS under förutsättning att lilla rådet så finner lämpligt.}
+\underparagraf{Medlemskapet gäller till verksamhetsårets slut, med undantag för fullvärdig medlem.}
+\underparagraf{Medlem har rätt att med rösträtt deltaga vid årsmöte samt begära viss fråga behandlad av detta eller lilla rådet.}
+\underparagraf{Medlem har rätt att om han/hon finner anledning till missnöje över chefernas, lilla eller stora rådets verksamhet meddela sellskapets revisorer. Dessa ska därvid inkalla extra årsmöte om de så finner lämpligt.}
+\vspace{1.5em}
+
+\huvudparagraf{Fullvärdigt medlemskap}
+\underparagraf{Fullvärdig medlem är medlem av stora rådet.}
+\underparagraf{Fullvärdigt medlemskap beviljas av stora rådet.}
+\underparagraf{Fullvärdig medlem kan den bli vars insats för sellskapet varit extraordinär.}
+\underparagraf{Fullvärdigt medlemskap gäller till personen begär utträde.}
+\underparagraf{Stora rådet kan dock upphäva det fullvärdiga medlemskapet om medlemmen missköter sig eller längre ej är THS-medlem.}
+\vspace{1.5em}
+
+\huvudparagraf{Årsmötet}
+\underparagraf{Årsmötet är sellskapets högst beslutande organ och utgörs av samtliga medlemmar.}
+\underparagraf{Årsmötet är beslutsmässigt med ¼ av medlemmarna närvarande.}
+\underparagraf{Ordinarie årsmöte infaller under april månad och sekundärt årsmöte infaller under september månad. Extra årsmöte kan hållas vid behov.}
+\underparagraf{Årsmötet sammanträder på kallelse av lilla rådet.}
+\underparagraf{Sellskapets revisorer eller minst sju medlemmar äger rätt att kalla till extra årsmöte.}
+\underparagraf{Kallelse till årsmöte anslås på Bergssektionen samt på THS:s kårhus senast 8 läsdagar före mötet. Årsmöte får ej hållas eller kallelsetid räknas under tentamensperiod eller ferie.}
+\underparagraf{Medlem har en röst. Dock må ingen deltaga eller leda sammanträdet då frågan om ansvarsfrihet för honom/henne behandlas.}
+\underparagraf{Verkmestaren har utslagsröst utom vid val då lotten avgör.}
+\underparagraf{Vid årsmöte förekommer ärenden som lilla rådet hänskjutit till mötet eller som skriftligen inlämnats till lilla rådet senast tre läsdagar före mötet. Beslut kan endast fattas i sådana frågor som upptagits på föredragslistan eller som står i omedelbart samband med sådant ärende.}
+\underparagraf{Årsmötet äger rätt att upphäva stora rådets beslut beträffande fullvärdigt medlemskap under förutsättning att årsmötet finner beslutet är fattat på felaktiga grunder.}
+\underparagraf{Ordinarie årsmöte skall speciellt behandla budget samt val av styrelse och organchefer för nästkommande verksamhetsår. Det sekundära årsmötet ska speciellt granska lilla och stora rådets, chefernas samt revisorernas berättelser samt frågan om ansvarsfrihet för dessa. Minst en av revisorerna måste vara närvarande vid dessa möten.}
+\underparagraf{Vid ordinarie årsmöte sker val av: verkmestare, präntmestare, räntmestare, fyrmestare, regissör, manuschef, musikchef, dekorchef, sminkchef, ljud- och ljuschef samt två revisorer.}
+\underparagraf{Omständigheterna kring valen ombesörjes av lilla rådet. Minst en revisor delar vid rösträkningen.}
+\vspace{1.5em}
+
+\huvudparagraf{Lilla rådet}
+\underparagraf{Lilla rådet är sellskapets styrelse.}
+\underparagraf{Lilla rådet är sellskapets firmatecknare.}
+\underparagraf{Lilla rådet väljs av årsmötet och sitter nästkommande verksamhetsår.}
+\underparagraf{Lilla rådet består av fyra medlemmar; verkmestaren (ordförande), präntmestaren (sektreterare), räntmestaren (kassör) samt fyrmestaren}
+\underparagraf{Verkmestaren ansvarar för sellskapets verksamhet i sin helhet. Präntmestaren skriver samt ansvarar för protokollen. Räntmestaren handhar sellskapets ekonomi. Fyrmestaren sköter sellskapets festverksamhet.}
+\underparagraf{Lilla rådet är beslutsmässigt med tre medlemmar närvarnande. Verkmestaren har utslagsröst.}
+\underparagraf{Lilla rådet skall till det sekundära årsmötet presentera ekonomiberättelse samt verksamhetsberättelse.}
+\vspace{1.5em}
+
+\huvudparagraf{Cheferna}
+\underparagraf{Cheferna leder sellskapets verksamhet inom olika konstnärliga områden enligt riktlinjer fastlagda av årsmötet samt lilla rådet.}
+\underparagraf{Cheferna väljs av årsmötet och sitter nästkommande verksamhetsår.}
+\underparagraf{De olika chefsområdena är; manus, regi, musik, dekor, ljud och ljus samt smink inkluderat kostym.}
+\underparagraf{Cheferna är ekonomiskt ansvariga inför lilla rådet och skall till det sekundära årsmötet presentera verksamhetsberättelse.}
+\vspace{1.5em}
+
+\huvudparagraf{Stora rådet}
+\underparagraf{Stora rådet utgörs av en rådsordförande samt 17 övriga medlemmar, vilka samtliga är fullvärdiga medlemmar i sellskapet.}
+\underparagraf{Det åligger stora rådet att vara väl förtrogen med sellskapets anrika traditioner samt att vara tokiga för rolighets skull.}
+\underparagraf{Stora rådet sammanträder på kallelse av rådsordförande, mötet benämnes rådsmöte.}
+\underparagraf{Kallelse till rådsmöte utdelas till rådsmedlemmarna senast 11 dagar före mötet.}
+\underparagraf{Minst tio rådsmedlemmar har rätt att tillkalla extra rådsmöte vid behov.}
+\underparagraf{Ordinare rådsmöte hålls två gånger årligen, ett höstmöte och ett vårmöte. Vårmötet skall särskilt behandla val av rådsordförande.}
+\underparagraf{Rådsmötet beslutar enbart i frågor rörande fullvärdigt medlemskap och val av rådsordförande.}
+\underparagraf{Varje rådsmedlem har en röst, rådsordförande har utslagsröst utom vid val av ny rådsordförande.}
+\underparagraf{Stora rådet är beslutsmässigt med det antal medlemmar som är närvarande.}
+\underparagraf{Stora rådet är ekonomiskt ansvarigt inför lilla rådet och rådsordförande skall till det sekundära årsmötet presentera verksamhetsberättelse.}
+\vspace{1.5em}
+
+\huvudparagraf{Revisorerna}
+\underparagraf{Revisorerna är två till antalet och väljs av årsmötet. Revisionsberättelsen skall undertecknas av minst en av revisorerna.}
+\underparagraf{Revisorerna skall fortlöpande granska sellskapets hela förvaltning och verksamhet och till det sekundära årsmötet presentera revisionsberättelse.}
+\vspace{1.5em}
+
+\huvudparagraf{Ändring av denna stadga}
+\underparagraf{Denna stadga ändras genom beslut på två på varandra följande årsmöten.}
+
+\end{document}
